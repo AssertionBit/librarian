@@ -1,0 +1,24 @@
+{% extends "base.jinja" %}
+
+{% block body %}
+    <h1>Header 1</h1>
+    <h2>Header 1</h2>
+    <h3>Header 1</h3>
+    <h4>Header 1</h4>
+    <h5>Header 1</h5>
+    <h6>Header 1</h6>
+    <from action="POST">
+        <input placeholder="login">
+        <input placeholder="number" type="tel">
+        <input type="submit">
+    </from>
+    <ul>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+    </ul>
+    <!-- Thanks to jinja -->
+    {{ lipsum(2) }}
+    <button>Example</button>
+    <a href="example.com">Example</a>
+{% endblock body %}

@@ -1,0 +1,40 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+bs4 = "*"
+requests = "*"
+flask = "*"
+click = "*"
+rich = "*"
+flask-cors = "*"
+stones = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-black = "*"
+pytest-flake8 = "*"
+black = "*"
+flake8 = "*"
+flake8-black = "*"
+tox = "*"
+pyinstaller = "*"
+mypy = "*"
+pytest-mypy = "*"
+types-beautifulsoup4 = "*"
+types-requests = "*"
+types-flask-cors = "*"
+build = "*"
+twine = "*"
+isort = "*"
+
+[requires]
+python_version = "3.10"
+python_full_version = "3.10.8"
+
+[scripts]
+compile = "python librarian.py"
+isort = "python -m isort librarian.py"
+black = "python -m black librarian.py"
